@@ -25,9 +25,9 @@ const StyledLogo = styled.div`
 export const Logo = () => {
     return (
         <StyledLogo>
-            <LogoIcon src="./assets/logo.jpeg"/>
+            {/* <LogoIcon src="./assets/logo.jpeg"/> */}
             <AppName>
-                Receipts handler
+                Bills handler
             </AppName>
         </StyledLogo>
     )

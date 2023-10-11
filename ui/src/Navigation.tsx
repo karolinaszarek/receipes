@@ -20,8 +20,8 @@ const A = styled.a`
 export const Navigation = () => {
     return (
         <Nav>
-            <A>Search a receipt</A>
-            <A>Add a receipt</A>
+            <A>Find a bill</A>
+            <A>Add a bill</A>
         </Nav>
     );
 };

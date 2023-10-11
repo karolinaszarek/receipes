@@ -1,10 +1,25 @@
-import React, {StrictMode} from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import {App} from './App';
+import { Bill, Root } from './routes';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+  },
+  {
+    path: "/bill/:billId",
+    element: <Bill />,
+  },
+]);
 
 ReactDOM.render(
-    <StrictMode>
-        <App/>
-    </StrictMode>,
-    document.getElementById("root"),
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>,
+  document.getElementById("root"),
 );
